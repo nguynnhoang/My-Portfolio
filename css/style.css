@@ -1,0 +1,267 @@
+*{
+    font-family: Hind,sans-serif;
+}
+
+:root{
+    --primary:#35a22c;
+    --white: #fff;
+    --black: #000;
+    --grey: #aaa;
+}
+
+/* header{
+    background: var(--black);
+} */
+
+/* NAV BAR */
+.logo i{
+    font-size: 45px;
+    color: var(--primary);
+}
+
+.logo span{
+    font-size: 36px;
+    color: var(--white);
+    margin-left: 5px;
+}
+
+.nav-toggle-btn{
+    background: var(--primary);
+}
+
+.nav-toggle-btn span{
+    color: var(--grey);
+}
+/* mobile */
+.navbar-collapse-custom.show{
+    background: var(--white);
+}
+
+.navbar-collapse-custom.show a{
+    color: var(--primary);
+}
+
+.navbar-collapse-custom.show li{
+    padding: 0 6px;
+}
+
+.navbar-collapse-custom.show li:hover{
+    background: var(--primary);
+}
+
+.navbar-collapse-custom.show a:hover{
+    color: var(--white);
+}
+
+.navbar-collapse-custom.show li:hover a.active{
+    color: var(--white)!important;
+}
+
+.navbar-collapse-custom.show li a.active{
+    color: var(--primary)!important;
+}
+
+/* desktop */
+.navbar-collapse-custom{
+}
+
+.navbar-collapse-custom a{
+    color: var(--white);
+}
+
+.navbar-collapse-custom li{
+    position: relative;
+    margin-left: 10px;
+}
+
+.navbar-collapse-custom li::after{
+    content: "";
+    width: 0;
+    height: 1px;
+    position: absolute;
+    background: var(--primary);
+    transition: 0.4s;
+}
+
+.navbar-collapse-custom li:hover::after{
+    width: 100%;
+}
+
+.navbar-collapse-custom li:hover a{
+    color: var(--primary);
+}
+
+.navbar-collapse-custom li:hover a.active{
+    color: var(--primary)!important;
+}
+
+.navbar-collapse-custom li a.active{
+    color: var(--white)!important;
+}
+
+/* BANNER */
+.carousel-wrapper{
+    height: 100vh;
+}
+
+.overlay{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background: var(--black);
+    opacity: 0.5;
+    top: 0;
+    left: 0;
+}
+
+.custom-carousel-indicators button{
+    height: 10px!important;
+    width: 10px!important;
+    border-radius: 100%;
+    border: none!important;
+}
+
+.custom-carousel-indicators button.active{
+    background: var(--primary)!important;
+}
+
+.custom-carousel-caption{
+    bottom: 50%;
+    transform: translateY(-10%);
+}
+
+.slider-img{
+    width: 200px;
+    height: 200px;
+    border-radius: 50%;
+    margin-bottom: 30px;
+}
+
+.custom-nav-link.active{
+    background: none!important;
+    border: 1px solid var(--black) !important;
+}
+
+.custom-nav-link{
+    background: none!important;
+    border: 1px solid var(--black) !important;
+}
+
+/* Tab */
+/* Card custom */
+.card{
+    transition: .4s;
+}
+.card:hover{
+    border: 1px solid var(--primary);
+}
+
+.card:hover h5{
+    color: var(--primary);
+}
+
+/* Available section */
+#available{
+    background-image: url(../img/3.jpg);
+    padding: 100px 0;
+    position: relative;
+}
+
+#available::before{
+    width: 100%;
+    height: 100%;
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    opacity: 0.5;
+    background: var(--black);
+    z-index: 1;
+}
+
+.available-content{
+    position: relative;
+    z-index: 300;
+}
+
+.available-item i{
+    color: var(--primary);
+    font-weight: bold;
+}
+
+.custom-card{
+    padding: 40px 40px;
+    background: rgba(255, 255, 255, 0.1);
+    border: rgba(255, 255, 255, 0.1);
+    backdrop-filter: blur(5px);
+    transition: .4s;
+}
+
+.available-item .card:hover{
+    background: var(--black);
+    border: 1px solid var(--white);
+}
+
+/* Achievement Section */
+.achievement-left{
+    padding: 50px;
+    border-radius: 5px;
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px 0px;
+}
+
+.achievement-image{
+    max-width: 100%;
+    height: auto;
+}
+
+.achievement-bg-img{
+    background-image: url(../img/memphis_3.png);
+    background-position: bottom left;
+    background-repeat: no-repeat;
+    background-size: 50% auto;
+    opacity: .5;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+}
+.achievement-content{
+    position: relative;
+    z-index: 2;
+}
+
+/* Footer */
+.footer-copyright{
+    border-top: 1px solid #454545;
+    margin-top: 30px;
+    padding-top: 30px;
+}
+
+.custom-footer{
+    background: #212529;
+    padding: 50px;
+}
+
+.footer-logo a{
+    color: var(--grey);
+    text-decoration: none;
+    border: 1px solid var(--grey);
+    width: 40px;
+    height: 40px;
+    display: inline-block;
+    margin: 4px 10px;
+    border-radius: 50%;
+    text-align: center;
+    line-height: 40px;
+    transition: 0.4s;
+}
+
+.footer-copyright p{
+    color: var(--grey);
+}
+
+.footer-logo a:hover{
+    border: 1px solid var(--primary);
+    color: var(--primary);
+}
